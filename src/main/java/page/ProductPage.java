@@ -4,7 +4,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ProductPage extends BasePage{
+public class ProductPage extends BasePage {
 
     private final By colorDropdown = By.id("pa_color");
     private final By sizeDropdown = By.id("pa_size");
@@ -18,31 +18,31 @@ public class ProductPage extends BasePage{
     }
 
     @Step
-    public void changeProductColor(){
+    public void changeProductColor() {
         scrollToElement(colorDropdown);
         selectDropdownOption(colorDropdown, "Pink");
     }
 
     @Step
-    public void changeProductSize(){
+    public void changeProductSize() {
         scrollToElement(sizeDropdown);
         selectDropdownOption(sizeDropdown, "37");
     }
 
     @Step
-    public void changeProductQuantity(){
+    public void changeProductQuantity() {
         scrollToElement(productQuantitySelector);
         clickElement(plusIcon);
         clickElement(plusIcon);
     }
 
     @Step
-    public void addToCart(){
+    public void addToCart() {
         clickElement(addToCartButton);
     }
 
     @Step
-    public void openCart(){
-        clickOnVisibleElement(cartIcon,10);
+    public void openCart() {
+        clickOnVisibleElement(cartIcon, 10);
     }
 }

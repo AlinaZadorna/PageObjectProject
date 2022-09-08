@@ -19,7 +19,7 @@ public class HomePage extends BasePage {
     }
 
     @Step
-    public void clickDismissButton(){
+    public void clickDismissButton() {
         clickOnVisibleElement(dismissButton, 10);
     }
 
@@ -28,16 +28,16 @@ public class HomePage extends BasePage {
         scrollToElement(tokyoTalkiesProduct);
         hoverVisibleElement(tokyoTalkiesProduct, 10);
         clickOnVisibleElement(addToWishlist, 10);
-        waitForElementVisibility(productAdded,10);
+        waitForElementVisibility(productAdded, 10);
     }
 
     @Step
-    public void openMyWishlist(){
+    public void openMyWishlist() {
         clickOnVisibleElement(myWishlistButton, 10);
     }
 
     @Step
-    public void openProduct(){
+    public void openProduct() {
         scrollToElement(pinkDropShoulderOversizeTShortProduct);
         clickOnVisibleElement(pinkDropShoulderOversizeTShortProduct, 10);
     }
