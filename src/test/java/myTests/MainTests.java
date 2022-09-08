@@ -1,7 +1,9 @@
-import Page.CartPage;
-import Page.HomePage;
-import Page.ProductPage;
-import Page.WishlistPage;
+package myTests;
+
+import page.CartPage;
+import page.HomePage;
+import page.ProductPage;
+import page.WishlistPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

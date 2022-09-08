@@ -1,5 +1,6 @@
-package Page;
+package page;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -16,26 +17,31 @@ public class ProductPage extends BasePage{
         super(driver);
     }
 
+    @Step
     public void changeProductColor(){
         scrollToElement(colorDropdown);
         selectDropdownOption(colorDropdown, "Pink");
     }
 
+    @Step
     public void changeProductSize(){
         scrollToElement(sizeDropdown);
         selectDropdownOption(sizeDropdown, "37");
     }
 
+    @Step
     public void changeProductQuantity(){
         scrollToElement(productQuantitySelector);
         clickElement(plusIcon);
         clickElement(plusIcon);
     }
 
+    @Step
     public void addToCart(){
         clickElement(addToCartButton);
     }
 
+    @Step
     public void openCart(){
         clickOnVisibleElement(cartIcon,10);
     }

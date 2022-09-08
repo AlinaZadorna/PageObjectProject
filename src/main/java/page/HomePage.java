@@ -1,5 +1,6 @@
-package Page;
+package page;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -17,10 +18,12 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
+    @Step
     public void clickDismissButton(){
         clickOnVisibleElement(dismissButton, 10);
     }
 
+    @Step
     public void addToFavorite() {
         scrollToElement(tokyoTalkiesProduct);
         hoverVisibleElement(tokyoTalkiesProduct, 10);
@@ -28,10 +31,12 @@ public class HomePage extends BasePage {
         waitForElementVisibility(productAdded,10);
     }
 
+    @Step
     public void openMyWishlist(){
         clickOnVisibleElement(myWishlistButton, 10);
     }
 
+    @Step
     public void openProduct(){
         scrollToElement(pinkDropShoulderOversizeTShortProduct);
         clickOnVisibleElement(pinkDropShoulderOversizeTShortProduct, 10);
