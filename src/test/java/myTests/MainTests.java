@@ -18,6 +18,7 @@ public class MainTests extends BaseTest {
     @Test
     public void addingToWishlist() {
         webDriver.get("https://shop.demoqa.com/");
+        log("open url \"https://shop.demoqa.com/\"");
         HomePage homePage = new HomePage(webDriver);
         homePage.clickDismissButton();
         homePage.addToFavorite();
@@ -39,6 +40,7 @@ public class MainTests extends BaseTest {
     @Test
     public void correctProductAddedToCart() {
         webDriver.get("https://shop.demoqa.com/");
+        log("open url \"https://shop.demoqa.com/\"");
         HomePage homePage = new HomePage(webDriver);
         ProductPage productPage = new ProductPage(webDriver);
         homePage.openProduct();

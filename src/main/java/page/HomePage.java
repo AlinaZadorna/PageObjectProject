@@ -18,12 +18,10 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
-    @Step
     public void clickDismissButton() {
         clickOnVisibleElement(dismissButton, 10);
     }
 
-    @Step
     public void addToFavorite() {
         scrollToElement(tokyoTalkiesProduct);
         hoverVisibleElement(tokyoTalkiesProduct, 10);
@@ -31,7 +29,6 @@ public class HomePage extends BasePage {
         waitForElementVisibility(productAdded, 10);
     }
 
-    @Step
     public void openMyWishlist() {
         clickOnVisibleElement(myWishlistButton, 10);
     }

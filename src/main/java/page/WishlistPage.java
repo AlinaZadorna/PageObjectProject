@@ -13,7 +13,6 @@ public class WishlistPage extends BasePage {
         super(driver);
     }
 
-    @Step
     public boolean elementIsPresent() {
         scrollUnderElement(tableColumnProductName);
         return getElement(addedToWishlistTokyoTalkiesProduct).isDisplayed();

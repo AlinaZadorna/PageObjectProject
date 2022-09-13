@@ -13,7 +13,6 @@ public class CartPage extends BasePage {
         super(driver);
     }
 
-    @Step
     public boolean elementIsPresent() {
         scrollUnderElement(productNameColumn);
         return getElement(addedToCartTShirt).isDisplayed();
